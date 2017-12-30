@@ -1,29 +1,7 @@
 // bower:scss
 // endbower
-body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-.phone-container {
-  width: 360px;
-  height: 640px;
-  margin: auto;
-  border: 1px solid #666;
-  position: relative;
-  background-color: #fff;
-}
-
-.login-screen {
-  background-color: #3498db;
-  width: 100%;
-  height: 100%;
-}
-
-.white-form-container{
-color: #fff;
-
-}
+@import "body";
+@import "login";
+@import "register";
+@import "checkbox"';
