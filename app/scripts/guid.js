@@ -1,17 +1,17 @@
 function check_guid() {
-    "use strict";
+    'use strict';
     if (Cookies.get('GUID')) {
-        console.log("I have the cookie");
+        console.log('I have the cookie');
         return true;
     } else {
-        console.log("I am getting the cookie");
+        console.log('I am getting the cookie');
         return false;
     }
 }
 
 function get_guid(api_addr) {
-    "use strict";
-    $.get(api_addr + "/getGUID", function (data, status) {
+    'use strict';
+    $.get(api_addr + '/getGUID', function (data, status) {
         //console.log("Data: " + data + "\nStatus: " + status);
         console.log(data);
         if(data.id){
@@ -23,8 +23,8 @@ function get_guid(api_addr) {
 }
 
 function guid() {
-    "use strict";
-    var api_addr = "http://localhost:3000";
+    'use strict';
+    var api_addr = 'http://localhost:3000';
     if (!check_guid()) {
         get_guid(api_addr);
     }

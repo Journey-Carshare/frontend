@@ -17,13 +17,13 @@ var getUrlParameter = function getUrlParameter(sParam) {
 var alert = getUrlParameter('alert');
 
 function generateAlert(text) {
-    "use strict";
+    'use strict';
     $('.banner-alert').html('<div class="alert alert-success" role="alert">' + text + '</div>');
 }
 
-if(alert == "cHdkY2huZw=="){
-    generateAlert("You successfully changed your password");
+if(alert == 'cHdkY2huZw=='){
+    generateAlert('You successfully changed your password');
 }
-if(alert == "YWNjbnRvcGVu"){
-    generateAlert("You successfully registered an account");
+if(alert == 'YWNjbnRvcGVu'){
+    generateAlert('You successfully registered an account');
 }

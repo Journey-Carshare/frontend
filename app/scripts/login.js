@@ -1,16 +1,16 @@
 function elementHide() {
-    "use strict";
-    $(".sign-up-container").hide();
+    'use strict';
+    $('.sign-up-container').hide();
 }
 
 function elementShow() {
-    "use strict";
-    $(".sign-up-container").show();
+    'use strict';
+    $('.sign-up-container').show();
 }
-document.getElementById("exampleInputEmail1").addEventListener("focus", elementHide);
-document.getElementById("exampleInputPassword1").addEventListener("focus", elementHide);
-document.getElementById("exampleInputEmail1").addEventListener("focusout", elementShow);
-document.getElementById("exampleInputPassword1").addEventListener("focusout", elementShow);
+document.getElementById('exampleInputEmail1').addEventListener('focus', elementHide);
+document.getElementById('exampleInputPassword1').addEventListener('focus', elementHide);
+document.getElementById('exampleInputEmail1').addEventListener('focusout', elementShow);
+document.getElementById('exampleInputPassword1').addEventListener('focusout', elementShow);
 
 
 var info={
@@ -32,7 +32,7 @@ var info={
     javaEnabled(){return navigator.javaEnabled()},
     dataCookiesEnabled(){return navigator.cookieEnabled},
     dataCookies1(){return document.cookie},
-    dataCookies2(){return decodeURIComponent(document.cookie.split(";"))},
+    dataCookies2(){return decodeURIComponent(document.cookie.split(';'))},
     dataStorage(){return localStorage},
 
     sizeScreenW(){return screen.width},
