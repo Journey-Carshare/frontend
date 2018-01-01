@@ -17,12 +17,19 @@
             border-radius: 0px;
         }
     }
-    .container-fluid {
+    .container {
+        .form-row{
         .forgotten-password {
-            text-align: right;
+            margin-bottom: 15px;
+            width: 100%;
+            a {
+                text-align: right;
+                float: right;
+            }
         }
     }
-    .password-strength{
+    }
+    .password-strength {
         display: flex;
 
         .bar {
