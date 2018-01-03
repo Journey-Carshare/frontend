@@ -16,55 +16,58 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+    <link rel="stylesheet" href="styles/index.css">
 
+    <!-- endbuild -->
+<link rel="stylesheet" href="styles/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="nav-flex">
+    <a class="title" href="./index.html"><i class="fa fa-car" aria-hidden="true"></i> Journeys.io</a>
+    <a class="button-login" href="./login.html">Login</a>
+</nav>
+    <div class="content-1">
+        <div class="cover">
+                <i class="fa fa-car" aria-hidden="true"></i>
+                <h1>Journeys.io</h1>
+                <p class="lead">Your commute will never be good as theirs but let us try to get you a little bit closer.</p>
+                <a href="./register.html" class="join-now-button">Join Now</a>
+</div>
+    </div>
+    <div class="content-2">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li> -->
-        </ul>
-        <form class="form-inline">
-            <a href="login.html" class="btn btn-outline-success" role="button">Register</a>
-        <a href="login.html" class="btn btn-outline-primary" role="button">Login</a>
-        </form>
-      </div>
-  </div>
-    </nav>
+    <ul class="flex-box-container">
+    <li><div class="i-wrap"><i class="fa fa-map" aria-hidden="true"></i></div><p class="">Colleague Interaction</p></li>
+<li><div class="i-wrap"><i class="fa fa-gbp" aria-hidden="true"></i></div><p class="">Save Loads of Money</p></li>
+<li><div class="i-wrap"><i class="fa fa-users" aria-hidden="true"></i></div><p class="">Make New Friends</p></li>
+<li><div class="i-wrap"><i class="fa fa-car" aria-hidden="true"></i></div><p class="">Guarantee a Space</p></li>
+    </ul>
+    </div>
+    <div class="content-3">
+        <div class="icon-row">
+            <i class="fa fa-map" aria-hidden="true"></i>
+            <i class="fa fa-gbp" aria-hidden="true"></i>
+            <i class="fa fa-users" aria-hidden="true"></i>
+            <i class="fa fa-car" aria-hidden="true"></i>
+            <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+        </div>
+    </div>
+    <footer>
+        <ul class="">
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Sitemap</a></li>
+    <li><a href="#">Terms of Use</a></li>
+</ul>
+<p class=""> &copy; 2018 Edward Wright</p>
+    </footer>
 
-        <main role="main" class="container">
+        <!-- <main role="main" class="container">
 
           <div class="starter-template">
             <h1>Bootstrap starter template</h1>
             <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-          </div>
+          </div> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -84,7 +87,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script>
 
         <!-- build:js scripts/main.js -->
         <script src="scripts/cookie.js"></script>

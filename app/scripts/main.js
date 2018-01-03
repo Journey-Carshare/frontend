@@ -1,5 +1,3 @@
-
-
 function boxcolor(strength) {
     'use strict';
     var color;
@@ -56,7 +54,7 @@ function boxcolor(strength) {
 
 function updateStrengthMeter() {
     'use strict';
-    var password = document.getElementById('exampleInputPassword1').value;
+    var password = document.getElementById('password').value;
     var score = zxcvbn(password).score;
     if (password === '') {
         boxcolor(0);
@@ -65,4 +63,4 @@ function updateStrengthMeter() {
     }
 }
 
-document.getElementById('exampleInputPassword1').addEventListener('input', updateStrengthMeter);
+document.getElementById('password').addEventListener('input', updateStrengthMeter);
