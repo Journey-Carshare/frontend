@@ -1,0 +1,54 @@
+.flat {
+    background: linear-gradient(to bottom right, #19B5FE , #BF55EC) no-repeat center center fixed; ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.flat-nav {
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+    .left, .right {
+      flex: 1;
+    }
+
+    a {
+        padding: 10px;
+        color: #fff;
+        font-size: 18px;
+        margin-right: auto;
+    }
+    .title {
+        padding: 10px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        margin: auto;
+        left: -9px;
+    }
+}
+
+.main-container {
+    padding: 0 5px;
+    margin-bottom: 10px;
+    .main-container-title {
+        color: #fff;
+        font-weight: 600;
+        text-shadow: 0px 3px 3px rgba(0,0,0,0.16);
+        margin-bottom: 2px;
+    }
+    .main-container-body {
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 5px 8px;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.16);
+
+        .btn-space {
+            margin-top: 5px;
+        }
+    }
+}
