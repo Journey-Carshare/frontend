@@ -1,0 +1,47 @@
+.login-screen {
+    background-color: #FAFAFA;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 58px;
+    margin-bottom: -58px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+
+    .banner-alert {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        .alert {
+            border-radius: 0px;
+        }
+    }
+    .container {
+        .form-row{
+        .forgotten-password {
+            margin-bottom: 15px;
+            width: 100%;
+            a {
+                text-align: right;
+                float: right;
+            }
+        }
+    }
+    }
+    .password-strength {
+        display: flex;
+
+        .bar {
+            width: 100%;
+            height: 4px;
+            background-color: darken(#fafafa, 10%);
+            margin-right: 5px;
+            margin-top: 2px;
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
