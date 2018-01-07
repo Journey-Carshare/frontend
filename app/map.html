@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
@@ -10,175 +10,159 @@
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/map.css">
     <!-- endbuild -->
-<link rel="stylesheet" href="styles/font-awesome.min.css">
-  </head>
-  <body>
-    <!--<div class="searchbar">
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon1">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+</head>
+<body>
+    <div class="map-info">
+        <div class="map-info-element">
+            Carshares to Reading
         </div>
-    </div>-->
-  <ul class="flex-container">
+    </div>
+<ul class="flex-container">
 
     <li class="flex-item">
-    <div id="map"></div>
+        <div id="map"></div>
     </li>
     <li class="flex-item item-list-container">
         <div class="item-list">
             <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 2.4 Miles</div>
                 <div class="item-title">Jacques Reading</div>
-                <div class="item-small-content">W12 7DA</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 3.6 Miles</div>
                 <div class="item-title">Edward Wright</div>
-                <div class="item-small-content">HA5 5NE</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 5.4 Miles</div>
                 <div class="item-title">Karan Sethi</div>
-                <div class="item-small-content">UB7 9HF</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 2.4 Miles</div>
                 <div class="item-title">Jacques Reading</div>
-                <div class="item-small-content">W12 7DA</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 3.6 Miles</div>
                 <div class="item-title">Edward Wright</div>
-                <div class="item-small-content">HA5 5NE</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 5.4 Miles</div>
                 <div class="item-title">Karan Sethi</div>
-                <div class="item-small-content">UB7 9HF</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 2.4 Miles</div>
                 <div class="item-title">Jacques Reading</div>
-                <div class="item-small-content">W12 7DA</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 3.6 Miles</div>
                 <div class="item-title">Edward Wright</div>
-                <div class="item-small-content">HA5 5NE</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 5.4 Miles</div>
                 <div class="item-title">Karan Sethi</div>
-                <div class="item-small-content">UB7 9HF</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
-                        <a href="./profile.html">
+            <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 2.4 Miles</div>
                 <div class="item-title">Jacques Reading</div>
-                <div class="item-small-content">W12 7DA</div>
-            </a>
-                        <a href="./profile.html">
-                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 3.6 Miles</div>
-                <div class="item-title">Edward Wright</div>
-                <div class="item-small-content">HA5 5NE</div>
-            </a>
-                        <a href="./profile.html">
-                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 5.4 Miles</div>
-                <div class="item-title">Karan Sethi</div>
-                <div class="item-small-content">UB7 9HF</div>
-            </a>
-                        <a href="./profile.html">
-                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 2.4 Miles</div>
-                <div class="item-title">Jacques Reading</div>
-                <div class="item-small-content">W12 7DA</div>
-            </a>
-                        <a href="./profile.html">
-                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 3.6 Miles</div>
-                <div class="item-title">Edward Wright</div>
-                <div class="item-small-content">HA5 5NE</div>
-            </a>
-                        <a href="./profile.html">
-                <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 5.4 Miles</div>
-                <div class="item-title">Karan Sethi</div>
-                <div class="item-small-content">UB7 9HF</div>
+                <div class="item-small-content"><i class="fa fa-caret-down"></i></div>
             </a>
         </div>
     </li>
-    </ul>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          //center: {lat: 51.3057676, lng: -0.5494706},
-          //zoom: 9,
-          disableDefaultUI: true
-        });
-      }
+</ul>
+<div class="bottom-bar-container">
+    <div class="bottom-bar">
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="#">Home</a>
+        <a href="#"><i class="fa fa-cog"></i></a>
+    </div>
+</div>
+<script>
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        //center: {lat: 51.3057676, lng: -0.5494706},
+        //zoom: 9,
+        disableDefaultUI: true
+    });
+}
 
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD284odf2blHXmEQ64JoprTYFjGsp4s4hk&callback=initMap"></script>
-    <script>
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD284odf2blHXmEQ64JoprTYFjGsp4s4hk&callback=initMap"></script>
+<script>
 
-    $(window).load(function(){
-     var geocoder = new google.maps.Geocoder();
-      var globalMarker = [];
-      function updateGlobalMarker(append) {
+$(window).load(function(){
+    var geocoder = new google.maps.Geocoder();
+    var globalMarker = [];
+    function updateGlobalMarker(append) {
         globalMarker.push(append);
-      };
+    };
     function geocodeAddress(geocoder, resultsMap, addressInput) {
         var address = addressInput;
         geocoder.geocode({'address': address}, function(results, status) {
-          if (status === 'OK') {
-            //resultsMap.setCenter(results[0].geometry.location);
-            console.log(results[0].geometry.location.lat());
+            if (status === 'OK') {
+                //resultsMap.setCenter(results[0].geometry.location);
+                console.log(results[0].geometry.location.lat());
 
-            var myLatLang;
-            var myLat;
-            var myLng;
+                var myLatLang;
+                var myLat;
+                var myLng;
 
-            var rand = Math.random();
-            var change = 0.005 * rand;
-            if(rand > 0.5){
-                myLat = results[0].geometry.location.lat() + change;
+                var rand = Math.random();
+                var change = 0.005 * rand;
+                if(rand > 0.5){
+                    myLat = results[0].geometry.location.lat() + change;
+                } else {
+                    myLat = results[0].geometry.location.lat() - change;
+                }
+                console.log(results[0].geometry.location.lat());
+
+                var rand = Math.random();
+                var change = 0.005 * rand;
+                if(rand > 0.5){
+                    myLng = results[0].geometry.location.lng() + change;
+                } else {
+                    myLng = results[0].geometry.location.lng() - change;
+                }
+
+                var myLatLang = {lat: myLat, lng: myLng};
+
+                var Marker = new google.maps.Marker({
+                    map: resultsMap,
+                    //position: results[0].geometry.location
+                    position: myLatLang
+                })
+                globalMarker.push(Marker);
+                console.log(globalMarker);
+
+                var bounds = new google.maps.LatLngBounds();
+                for (var i=0; i < globalMarker.length; i++) {
+                    bounds.extend(globalMarker[i].getPosition());
+                }
+                map.fitBounds(bounds);
             } else {
-                myLat = results[0].geometry.location.lat() - change;
+                alert('Geocode was not successful for the following reason: ' + status);
             }
-            console.log(results[0].geometry.location.lat());
-
-            var rand = Math.random();
-            var change = 0.005 * rand;
-            if(rand > 0.5){
-                myLng = results[0].geometry.location.lng() + change;
-            } else {
-                myLng = results[0].geometry.location.lng() - change;
-            }
-
-            var myLatLang = {lat: myLat, lng: myLng};
-
-            var Marker = new google.maps.Marker({
-              map: resultsMap,
-              //position: results[0].geometry.location
-              position: myLatLang
-            })
-            globalMarker.push(Marker);
-console.log(globalMarker);
-
-            var bounds = new google.maps.LatLngBounds();
-        for (var i=0; i < globalMarker.length; i++) {
-           bounds.extend(globalMarker[i].getPosition());
-        }
-        map.fitBounds(bounds);
-          } else {
-            alert('Geocode was not successful for the following reason: ' + status);
-          }
         });
-      };
+    };
 
 
-      geocodeAddress(geocoder, map, "HA55NE");  //harrow
-      geocodeAddress(geocoder, map, "W12 7DA"); //shepards bush
-      geocodeAddress(geocoder, map, "UB79HF");  //west drayton
-      geocodeAddress(geocoder, map, "HA0 4RF");  //west drayton
-      })
-    </script>
- </body>
+    geocodeAddress(geocoder, map, "HA55NE");  //harrow
+    geocodeAddress(geocoder, map, "W12 7DA"); //shepards bush
+    geocodeAddress(geocoder, map, "UB79HF");  //west drayton
+    geocodeAddress(geocoder, map, "HA0 4RF");  //west drayton
+})
+</script>
+</body>
 </html>
