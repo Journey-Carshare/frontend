@@ -1,49 +1,23 @@
-@import "../../node_modules/bootstrap/scss/bootstrap";
-html, body {
-height: 100%;
-margin: 0;
-padding: 0;
-font-size: 16px;
-}
+// html, body {
+// height: 100%;
+// margin: 0;
+// padding: 0;
+// font-size: 16px;
+// }
 .map-info {
-    position: fixed;
-    top: 0;
-    left: 0;
+
     width: 100%;
     z-index: 10;
 
     .map-info-element {
         background-color: #fff;
-        margin: 5px 10px 0px 10px;
-        border-radius: 4px;
         box-shadow: 0px 2px 3px rgba(0,0,0,0.20);
-        padding: 4px;
         text-align: center;
-        border: 1px solid #ddd;
-    }
-}
-
-.bottom-bar-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-
-    .bottom-bar {
-        background-color: #fff;
-        box-shadow: 0px -2px 6px rgba(0,0,0,0.20);
-        text-align: center;
-        border-top: 1px solid #ddd;
-
-        display: flex;
-        justify-content: space-around;
-
-        a {
-            padding: 10px;
-            color: #333;
-            font-size: 20px;
-        }
+        border-bottom: 1px solid #ddd;
+        padding: 4px 0;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
     }
 }
 
@@ -65,12 +39,17 @@ font-size: 16px;
 .flex-item {
     flex-basis: 50%;
 }
+#mapflex {
+    flex-basis: 45%;
+}
+#belowflex {
+    flex-basis: 55%;
+}
 
 .item-list-container {
     height: 100%;
     overflow: auto;
     background-color: #fafafa;
-    border-top: 2px solid #ddd;
 
 }
 .item-list {

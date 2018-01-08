@@ -8,22 +8,21 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
 
     <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/map.css">
+    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <link rel="stylesheet" href="styles/font-awesome.min.css">
 </head>
 <body>
-    <div class="map-info">
-        <div class="map-info-element">
-            Carshares to Reading
-        </div>
-    </div>
 <ul class="flex-container">
-
-    <li class="flex-item">
+    <li class="flex-item" id="mapflex">
         <div id="map"></div>
     </li>
-    <li class="flex-item item-list-container">
+    <li class="flex-item item-list-container" id="belowflex">
+        <div class="map-info">
+            <div class="map-info-element">
+                Carshares to Reading
+            </div>
+        </div>
         <div class="item-list">
             <a href="./profile.html">
                 <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i> 2.4 Miles</div>
@@ -80,10 +79,10 @@
 </ul>
 <div class="bottom-bar-container">
     <div class="bottom-bar">
-        <a href="#">Home</a>
-        <a href="#">Home</a>
-        <a href="#">Home</a>
-        <a href="#">Home</a>
+        <a href="#"><i class="fa fa-cog"></i></a>
+        <a href="#"><i class="fa fa-cog"></i></a>
+        <a href="#" class="plus"><i class="fa fa-plus"></i></a>
+        <a href="#"><i class="fa fa-cog"></i></a>
         <a href="#"><i class="fa fa-cog"></i></a>
     </div>
 </div>

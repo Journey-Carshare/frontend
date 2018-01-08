@@ -1,21 +1,6 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-@font-face {
-    font-family: Open Sans;
-    src: url('../fonts/OpenSans-Regular.ttf');
-}
-
-@font-face {
-    font-family: Open Sans;
-    src: url('../fonts/OpenSans-SemiBold.ttf');
-    font-weight: 600;
-}
-
-@font-face {
-    font-family: Open Sans;
-    src: url('../fonts/OpenSans-Bold.ttf');
-    font-weight: 700;
-}
+@import "fonts.scss";
 
 html, body {
     width: 100%;
