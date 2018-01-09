@@ -21,6 +21,30 @@
     <link rel="stylesheet" href="styles/font-awesome.min.css">
 </head>
 <body>
+    <nav class="mat-nav" id="nav">
+        <div class="top-bar">
+            <a href="#" id="peek-show"><i class="fa fa-bars"></i></a>
+            <div class="title">Calendar</div>
+        </div>
+        <div class="mat-menu" id="peek">
+            <div class="mat-left">
+                <div class="mat-left-user">
+            <img src="../images/profile_user.jpg">
+            <div class="name">Edward Wright</div>
+            <div class="position">Software Engineer</div>
+                </div>
+                <div class="mat-left-items">
+                    <a href="#"><i class="fa fa-home"></i> Home</a>
+                    <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+                    <a href="#"><i class="fa fa-car"></i> Journeys</a>
+                    <a href="#"><i class="fa fa-user"></i> Profile</a>
+                    <a href="#"><i class="fa fa-cog"></i> Settings</a>
+                    <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+                </div>
+            </div>
+            <a href="#" id="peek-hide" class="mat-right"></a>
+        </div>
+    </nav>
     <div class="mat-cal-container">
     <div class="mat-cal-head">
     <div class="month">
@@ -224,7 +248,8 @@
         <script src="scripts/guid.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/login.js"></script>
-            <script src="scripts/banner.js"></script>
+        <script src="scripts/banner.js"></script>
+        <script src="scripts/nav.js"></script>
         <script src='https://www.google.com/recaptcha/api.js'></script>
         <!-- endbuild -->
     </body>
