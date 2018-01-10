@@ -1,11 +1,11 @@
-$("#peek").hide();
+$('#peek').hide();
 
-$("#peek-show").click(function(){
-    console.log("show");
-    $("#peek").show();
+$('#peek-show').click(function(){
+    console.log('show');
+    $('#peek').show();
 });
 
-$("#peek-hide").click(function(){
-    console.log("hide");
-    $("#peek").hide();
+$('#peek-hide').click(function(){
+    console.log('hide');
+    $('#peek').hide();
 });
