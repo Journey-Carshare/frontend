@@ -1,8 +1,7 @@
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(
-        [
+    caches.open("static-site").then(function(cache) {
+      return cache.addAll([
           '/styles/main.css',
           '/styles/font-awesome.min.css',
           '/scripts/main.js',
@@ -18,8 +17,11 @@ self.addEventListener('install', function(event) {
           'fonts/Roboto-Bold.ttf',
           'fonts/Roboto-Medium.ttf',
           '/index.html'
-        ]
-      );
+        ]);
     })
   );
+});
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(caches.match(event.request));
 });
