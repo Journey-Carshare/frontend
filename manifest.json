@@ -1,0 +1,15 @@
+{
+  "short_name": "Journeys",
+  "name": "Journeys.io",
+  "icons": [
+    {
+      "src":"images/favicon.png",
+      "sizes": "800x800",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#fff",
+  "theme_color": "#3498db",
+  "display": "fullscreen"
+}
