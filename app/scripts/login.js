@@ -58,3 +58,12 @@ var info={
 
 
     };
+    // "user pool id eu-west-1_hHC08zjgQ"
+    // "app client id v2u7b84ip31mdlagd5ut9irvt"
+    // When using loose Javascript files:
+
+
+    // var crypto = require('crypto');
+    // var AmazonCognitoIdentity = require('amazon-cognito-identity-js');
+    // var CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;
+    //var CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;

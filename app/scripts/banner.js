@@ -18,6 +18,7 @@ var alert = getUrlParameter('alert');
 
 function generateAlert(text) {
     'use strict';
+    console.log('gen alert');
     $('.banner-alert').html('<div class="alert alert-success" role="alert">' + text + '</div>');
 }
 

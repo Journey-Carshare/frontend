@@ -10,6 +10,7 @@ function boxcolor(strength) {
         $('.password-strength .bar:nth-child(3)').css('background-color', defaultColor);
         $('.password-strength .bar:nth-child(4)').css('background-color', defaultColor);
         $('.password-strength .bar:nth-child(5)').css('background-color', defaultColor);
+        $('#password').removeClass('is-valid').addClass('is-invalid');
         break;
     case 2:
         color = '#ff0000';
@@ -18,6 +19,7 @@ function boxcolor(strength) {
         $('.password-strength .bar:nth-child(3)').css('background-color', defaultColor);
         $('.password-strength .bar:nth-child(4)').css('background-color', defaultColor);
         $('.password-strength .bar:nth-child(5)').css('background-color', defaultColor);
+        $('#password').removeClass('is-valid').addClass('is-invalid');
         break;
     case 3:
         color = '#ff0000';
@@ -26,6 +28,7 @@ function boxcolor(strength) {
         $('.password-strength .bar:nth-child(3)').css('background-color', color);
         $('.password-strength .bar:nth-child(4)').css('background-color', defaultColor);
         $('.password-strength .bar:nth-child(5)').css('background-color', defaultColor);
+        $('#password').removeClass('is-valid').addClass('is-invalid');
         break;
     case 4:
         color = '#28a745';
@@ -34,6 +37,7 @@ function boxcolor(strength) {
         $('.password-strength .bar:nth-child(3)').css('background-color', color);
         $('.password-strength .bar:nth-child(4)').css('background-color', color);
         $('.password-strength .bar:nth-child(5)').css('background-color', defaultColor);
+        $('#password').removeClass('is-invalid').addClass('is-valid');
         break;
     case 5:
         color = '#28a745';
@@ -42,6 +46,7 @@ function boxcolor(strength) {
         $('.password-strength .bar:nth-child(3)').css('background-color', color);
         $('.password-strength .bar:nth-child(4)').css('background-color', color);
         $('.password-strength .bar:nth-child(5)').css('background-color', color);
+        $('#password').removeClass('is-invalid').addClass('is-valid');
         break;
     default:
         $('.password-strength .bar:nth-child(1)').css('background-color', defaultColor);
@@ -49,6 +54,7 @@ function boxcolor(strength) {
         $('.password-strength .bar:nth-child(3)').css('background-color', defaultColor);
         $('.password-strength .bar:nth-child(4)').css('background-color', defaultColor);
         $('.password-strength .bar:nth-child(5)').css('background-color', defaultColor);
+        $('#password').removeClass('is-invalid is-valid');
     }
 }
 
@@ -66,17 +72,17 @@ function updateStrengthMeter() {
 function checkPwdMatch() {
     'use strict';
     if(document.getElementById('password').value != document.getElementById('passwordConfirm').value){
-        console.log("hide");
-        $('#pwdConfErr').show();
-        $('#pwdConfErr').text("Passwords don't match");
-        $('#passwordConfirm').removeClass("is-valid").addClass("is-invalid");
+        //console.log('hide');
+        // $('#pwdConfErr').show();
+        $('#passwordConfirm').removeClass('is-valid').addClass('is-invalid');
 
     } else {
-        console.log("match");
-        $('#pwdConfErr').hide();
-        $('#passwordConfirm').removeClass("is-invalid").addClass("is-valid");
+        //console.log('match');
+        // $('#pwdConfErr').hide();
+        $('#passwordConfirm').removeClass('is-invalid').addClass('is-valid');
     }
 }
 
 document.getElementById('password').addEventListener('input', updateStrengthMeter);
 document.getElementById('passwordConfirm').addEventListener('input', checkPwdMatch);
+$('#alert').hide();
