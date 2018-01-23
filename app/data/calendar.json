@@ -8,7 +8,7 @@
         },
         {
             "journeys": [
-                {"name": "No Travel", "postcode": "", "time": "", "event":"none"}
+                {"name": "No Travel", "postcode": "", "time": "", "event":"danger"}
             ]
         },
         {

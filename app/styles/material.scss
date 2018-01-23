@@ -120,8 +120,8 @@
         padding: 65px 20px 0px 20px;
         background: url('../images/cloud3.png')  #3498db;
         background-repeat: no-repeat;
-        background-size: auto 100px;
-        background-position: center;
+        background-size: auto 90px;
+        background-position: 50% 85%;
 
         .month {
             font-size: 40px;
@@ -221,15 +221,15 @@
     }
 }
 
-.bg-morn {
+.bg-morning {
     background-color: #F89406 !important;
     color: #fff !important;
 }
-.bg-aft {
+.bg-evening {
     background-color: #446CB3 !important;
     color: #fff !important;
 }
-.bg-red {
+.bg-danger {
     background-color: #e74c3c !important;
     color: #fff !important;
 }

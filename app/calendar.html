@@ -43,17 +43,16 @@
         <div class="mat-menu" id="peek">
             <div class="mat-left">
                 <div class="mat-left-user">
-                    <img src="../images/profile_user.jpg">
+                    <img src="../images/profile_user.jpg" alt="cloud">
                     <div class="name">Edward Wright</div>
                     <div class="position">Software Engineer</div>
                 </div>
                 <div class="mat-left-items">
-                    <a href="#"><i class="fa fa-home"></i> Home</a>
-                    <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
-                    <a href="#"><i class="fa fa-car"></i> Journeys</a>
-                    <a href="#"><i class="fa fa-user"></i> Profile</a>
-                    <a href="#"><i class="fa fa-cog"></i> Settings</a>
-                    <a href="#"><i class="fa fa-sign-out"></i> Logout</a>
+                    <a href="./calendar.html"><i class="fa fa-calendar"></i> Home</a>
+                    <a href="./map.html"><i class="fa fa-car"></i> Journeys</a>
+                    <a href="./profile.html"><i class="fa fa-user"></i> Profile</a>
+                    <a href="./settings.html"><i class="fa fa-cog"></i> Settings</a>
+                    <a href="./index.html"><i class="fa fa-sign-out"></i> Logout</a>
                 </div>
             </div>
             <a href="#" id="peek-hide" class="mat-right"></a>
@@ -74,167 +73,6 @@
         </div>
         <div class="mat-cal-foot">
             <div class="mat-cal-foot-day" id="calendarContainer">
-                <!-- <div class="mat-cal-foot-day-element">
-                    <div class="date">08
-                        <div class="day">Mon</div>
-                    </div>
-                    <div class="mat-cal-foot-day-journey">
-                        <div class="mat-cal-foot-day-journey-element bg-morn">
-                            <div class="title">
-                                To Work
-                            </div>
-                            <div class="location">
-                                <i class="fa fa-map-marker"></i> UB7 9HF
-                            </div>
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i> 07:40
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-sun-o"></i>
-                            </div>
-                        </div>
-                        <div class="mat-cal-foot-day-journey-element bg-aft">
-                            <div class="title">
-                                To Home
-                            </div>
-                            <div class="location">
-                                <i class="fa fa-map-marker"></i> RG2 6GF
-                            </div>
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i> 16:00
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-moon-o"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-                <!-- <div class="mat-cal-foot-day-element">
-                    <div class="date">09
-                        <div class="day">Tue</div>
-                    </div>
-                    <div class="mat-cal-foot-day-journey">
-                        <div class="mat-cal-foot-day-journey-element bg-red">
-                            <div class="title">
-                                No Travel
-                            </div>
-                            <div class="location">
-
-                            </div>
-                            <div class="time">
-
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-minus-circle"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mat-cal-foot-day-element">
-                    <div class="date">10
-                        <div class="day">Wed</div>
-                    </div>
-                    <div class="mat-cal-foot-day-journey">
-                        <div class="mat-cal-foot-day-journey-element bg-morn">
-                            <div class="title">
-                                To Work
-                            </div>
-                            <div class="location">
-                                <i class="fa fa-map-marker"></i> UB7 9HF
-                            </div>
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i> 07:40
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-sun-o"></i>
-                            </div>
-                        </div>
-                        <div class="mat-cal-foot-day-journey-element bg-aft">
-                            <div class="title">
-                                To Home
-                            </div>
-                            <div class="location">
-                                <i class="fa fa-map-marker"></i> RG2 6GF
-                            </div>
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i> 16:00
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-moon-o"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mat-cal-foot-day-element">
-                    <div class="date">11
-                        <div class="day">Thu</div>
-                    </div>
-                    <div class="mat-cal-foot-day-journey">
-                        <div class="mat-cal-foot-day-journey-element bg-morn">
-                            <div class="title">
-                                To Work
-                            </div>
-                            <div class="location">
-                                <i class="fa fa-map-marker"></i> UB7 9HF
-                            </div>
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i> 07:40
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-sun-o"></i>
-                            </div>
-                        </div>
-                        <div class="mat-cal-foot-day-journey-element bg-aft">
-                            <div class="title">
-                                To Home
-                            </div>
-                            <div class="location">
-                                <i class="fa fa-map-marker"></i> RG2 6GF
-                            </div>
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i> 16:00
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-moon-o"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mat-cal-foot-day-element">
-                    <div class="date">12
-                        <div class="day">Fri</div>
-                    </div>
-                    <div class="mat-cal-foot-day-journey">
-                        <div class="mat-cal-foot-day-journey-element bg-morn">
-                            <div class="title">
-                                To Work
-                            </div>
-                            <div class="location">
-                                <i class="fa fa-map-marker"></i> UB7 9HF
-                            </div>
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i> 07:40
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-sun-o"></i>
-                            </div>
-                        </div>
-                        <div class="mat-cal-foot-day-journey-element bg-aft">
-                            <div class="title">
-                                To Home
-                            </div>
-                            <div class="location">
-                                <i class="fa fa-map-marker"></i> RG2 6GF
-                            </div>
-                            <div class="time">
-                                <i class="fa fa-clock-o"></i> 16:00
-                            </div>
-                            <div class="icon">
-                                <i class="fa fa-moon-o"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>

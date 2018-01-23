@@ -21,6 +21,30 @@
     <link rel="stylesheet" href="styles/font-awesome.min.css">
 </head>
 <body class="flat">
+    <nav class="mat-nav" id="nav">
+        <div class="top-bar">
+            <a href="#" id="peek-show"><i class="fa fa-bars"></i></a>
+            <div class="title">Carshares</div>
+            <div class="button"></div>
+        </div>
+        <div class="mat-menu" id="peek">
+            <div class="mat-left">
+                <div class="mat-left-user">
+                    <img src="../images/profile_user.jpg" alt="cloud">
+                    <div class="name">Edward Wright</div>
+                    <div class="position">Software Engineer</div>
+                </div>
+                <div class="mat-left-items">
+                    <a href="./calendar.html"><i class="fa fa-calendar"></i> Home</a>
+                    <a href="./map.html"><i class="fa fa-car"></i> Journeys</a>
+                    <a href="./profile.html"><i class="fa fa-user"></i> Profile</a>
+                    <a href="./settings.html"><i class="fa fa-cog"></i> Settings</a>
+                    <a href="./index.html"><i class="fa fa-sign-out"></i> Logout</a>
+                </div>
+            </div>
+            <a href="#" id="peek-hide" class="mat-right"></a>
+        </div>
+    </nav>
     <div class="profile">
         <nav class="flat-nav">
             <a class="left" href="map.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
@@ -57,7 +81,7 @@
 
         </div>
     </div>
-    <div class="bottom-bar-container">
+    <!-- <div class="bottom-bar-container">
         <div class="bottom-bar">
             <a href="#">Home</a>
             <a href="#">Home</a>
@@ -65,7 +89,7 @@
             <a href="#">Home</a>
             <a href="#"><i class="fa fa-cog"></i></a>
         </div>
-    </div>
+    </div> -->
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -75,7 +99,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
+<script src="scripts/nav.js"></script>
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/cookie.js"></script>
