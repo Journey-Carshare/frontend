@@ -1,0 +1,33 @@
+{
+    "calendar": [
+        {
+            "journeys": [
+                {"name": "To Work", "postcode": "UB7 9HF", "time": "07:40", "event":"morning"},
+                {"name": "To Home", "postcode": "RG2 6GF", "time": "16:00", "event":"evening"}
+            ]
+        },
+        {
+            "journeys": [
+                {"name": "No Travel", "postcode": "", "time": "", "event":"danger"}
+            ]
+        },
+        {
+            "journeys": [
+                {"name": "To Work", "postcode": "UB7 9HF", "time": "07:40", "event":"morning"},
+                {"name": "To Home", "postcode": "RG2 6GF", "time": "16:00", "event":"evening"}
+            ]
+        },
+        {
+            "journeys": [
+                {"name": "To Work", "postcode": "UB7 9HF", "time": "07:40", "event":"morning"},
+                {"name": "To Home", "postcode": "RG2 6GF", "time": "16:00", "event":"evening"}
+            ]
+        },
+        {
+            "journeys": [
+                {"name": "To Work", "postcode": "UB7 9HF", "time": "07:40", "event":"morning"},
+                {"name": "To Home", "postcode": "RG2 6GF", "time": "16:00", "event":"evening"}
+            ]
+        }
+    ]
+}
