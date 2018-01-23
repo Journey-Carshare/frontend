@@ -140,7 +140,9 @@ function initMap() {
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD284odf2blHXmEQ64JoprTYFjGsp4s4hk&callback=initMap"></script>
+<!-- build:js scripts/nav.js -->
 <script src="scripts/nav.js"></script>
+<!-- endbuild -->
 <script>
 function getMapJSON(){
     return $.getJSON( "data/map.json").then(function(data) {
