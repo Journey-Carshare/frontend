@@ -22,7 +22,12 @@ function setCalendarArray(dateIn) {
     var i;
     for(i = 0; i < 5; i++){
         var date1 = today.getDate() + i;
-        var day1 = days[today.getDay() + i];
+        var day1;
+        if((today.getDay() + i) > 6){
+            day1 = days[0];
+        } else {
+            day1 = days[today.getDay() + i];
+        }
 
         calendar.week.push({
             'day': day1,
