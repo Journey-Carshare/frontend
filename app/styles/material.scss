@@ -43,7 +43,7 @@
 
 
         .mat-left {
-            flex-basis: 75%;
+            flex-basis: 82.5%;
             flex-shrink: 0;
             background-color: #fff;
             box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
@@ -98,7 +98,7 @@
             }
         }
         .mat-right {
-            flex-basis: 25%;
+            flex-basis: 17.5%;
             flex-shrink: 0;
             background-color: rgba(0,0,0,0.25);
         }
@@ -332,5 +332,52 @@ footer {
         font-size: 12px;
         padding: 5px 0;
         margin: 0;
+    }
+}
+.mat-cal-buttons-group {
+    position: absolute;
+    bottom: 10px;
+    right: 16px;
+    height: 60px;
+    width: 60px;
+    .mat-cal-minor-btn {
+        // display: none;
+        z-index: 10;
+        position: absolute;
+        bottom: 70px;
+        right: 10px;
+        a {
+            background-color:  #1bb850;
+            box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+            height: 40px;
+            width: 40px;
+            border-radius: 30px;
+            text-align: center;
+            color: #fff;
+            font-size: 20px;
+            padding-top: 6px;
+        }
+
+    }
+    .mat-cal-add-btn {
+        z-index: 10;
+        position: absolute;
+        background-color:  #007bff;
+        box-shadow: 0 5px 11px 0 rgba(0,0,0,.18), 0 4px 15px 0 rgba(0,0,0,.15);
+        height: 60px;
+        width: 60px;
+        border-radius: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 28px;
+        padding-top: 9px;
+
+        &:hover, &:visited, &:focus {
+            color: #fff;
+        }
+        &:active {
+            color: #eee;
+            background-color:  darken(#007bff, 5%);
+        }
     }
 }
