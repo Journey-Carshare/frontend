@@ -1,0 +1,1 @@
+"use strict";$("#peek").hide(),$("#peek-show").click(function(){$("#peek").show()}),$("#peek-hide").click(function(){$("#peek").hide()});
