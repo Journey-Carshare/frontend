@@ -1,8 +1,12 @@
 .register-screen {
-    background-color: #FAFAFA;
-    width: 100%;
-    height: 100%;
-    padding-top: 10px;
+    background: #fff;
+    max-width: 760px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: 1px solid  rgba(0,0,0,0.16);
+    margin: 10px auto 0 auto;
+    padding: 15px 0;
+
     .container-fluid {
         .form-group {
             margin-bottom: 2px;
@@ -13,6 +17,18 @@
             .g-recaptcha {
                 margin: 5px 0;
             }
+        }
+    }
+    .title {
+        font-size: 40px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        text-align: center;
+        img {
+            height: 70px;
+            width: 70px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            border-radius: 4px;
         }
     }
     .password-strength{
@@ -34,11 +50,19 @@
 
 .sign-up-container {
     position: relative;
-    bottom: 0;
-    background-color: #fff;
-    width: 100%;
-    padding: 8px 0;
-    height: 58px;
+    // bottom: 0;
+    // background-color: transparent;
+    // width: 100%;
+    // padding: 8px 0;
+    // height: 58px;
+
+    background: #fff;
+    max-width: 760px;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: 1px solid  rgba(0,0,0,0.16);
+    margin: 10px auto 0 auto;
+    padding: 15px 0;
 
     .container-fluid {
         .row {
@@ -48,6 +72,71 @@
             .col {
                 .btn {
                     color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .register-screen {
+        background: #fff;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        border: 0px;
+        margin: 10px auto 0 auto;
+        padding: 15px 0;
+
+        .container-fluid {
+            .form-group {
+                margin-bottom: 2px;
+
+                label {
+                    margin-bottom: 0px;
+                }
+                .g-recaptcha {
+                    margin: 5px 0;
+                }
+            }
+        }
+        .title {
+            display: none;
+        }
+        .password-strength{
+            display: flex;
+
+            .bar {
+                width: 100%;
+                height: 4px;
+                background-color: darken(#fafafa, 10%);
+                margin-right: 5px;
+                margin-top: 2px;
+
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .sign-up-container {
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 8px 0;
+        height: 58px;
+
+        .container-fluid {
+            .row {
+                .text {
+                    padding-top: 10px;
+                }
+                .col {
+                    .btn {
+                        color: #fff;
+                    }
                 }
             }
         }
