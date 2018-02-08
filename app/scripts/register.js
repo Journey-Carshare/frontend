@@ -85,4 +85,4 @@ function checkPwdMatch() {
 
 document.getElementById('password').addEventListener('input', updateStrengthMeter);
 document.getElementById('passwordConfirm').addEventListener('input', checkPwdMatch);
-$('#alert').hide();
+// $('#alert').hide();

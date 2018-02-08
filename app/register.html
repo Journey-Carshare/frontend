@@ -37,7 +37,7 @@
     <div class="register-screen">
         <div class="container-fluid">
             <div class="alert alert-danger alert-dismissible fade show" role="alert" id="alert">
-              <strong>Error</strong> Error Content.
+              <strong>Error</strong> New Registrations are currently disabled.
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -54,21 +54,21 @@
                             <div class="form-row">
                                 <div class="col">
                                     <label for="firstName">First Name</label>
-                                    <input type="text" class="form-control" id="firstName" required autocomplete="given-name">
+                                    <input type="text" class="form-control" id="firstName" required autocomplete="given-name" disabled>
                                 </div>
                                 <div class="col">
                                     <label for="lastName">Last Name</label>
-                                    <input type="text" class="form-control" id="lastName" required autocomplete="family-name">
+                                    <input type="text" class="form-control" id="lastName" required autocomplete="family-name" disabled>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" required autocomplete="email">
+                            <input type="email" class="form-control" id="email" required autocomplete="email" disabled>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control" id="password" required autocomplete="new-password">
+                            <input type="password" class="form-control" id="password" required autocomplete="new-password" disabled>
                             <div id="password-strength" class="password-strength">
                                 <div class="bar"></div>
                                 <div class="bar"></div>
@@ -82,25 +82,25 @@
                         </div>
                         <div class="form-group">
                             <label for="passwordConfirm">Confirm Password</label>
-                            <input type="password" class="form-control" id="passwordConfirm" required autocomplete="new-password">
+                            <input type="password" class="form-control" id="passwordConfirm" required autocomplete="new-password" disabled>
                             <div id="pwdConfErr" class="invalid-feedback">
                             Passwords don't match
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="postcode">Postcode</label>
-                            <input type="text" class="form-control" id="postcode" required autocomplete="postal-code">
+                            <input type="text" class="form-control" id="postcode" required autocomplete="postal-code" disabled>
                         </div>
                         <div class="form-group">
                             <label for="phoneNumber">Phone Number</label>
-                            <input type="text" class="form-control" id="phoneNumber" required autocomplete="tel">
+                            <input type="text" class="form-control" id="phoneNumber" required autocomplete="tel" disabled>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                         <div class="g-recaptcha" data-sitekey="6Ldo1D4UAAAAACQJm8FaQnp5lFtFmrHtIGu8HUxW"></div>
-                    </div>
+                    </div> -->
                     <div class="form-row">
                         <div class="col">
-                            <button type="submit" class="btn btn-primary btn-block btn-lg">Sign up</button>
+                            <button type="submit" class="btn btn-primary btn-block btn-lg" disabled>Sign up</button>
                         </div>
                         <div class="col">
                             <a class="btn btn-secondary btn-block btn-lg" href="./login.html">Cancel</a>

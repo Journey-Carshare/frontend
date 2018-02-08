@@ -131,15 +131,15 @@
 var map;
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        //center: {lat: 51.3057676, lng: -0.5494706},
-        //zoom: 9,
+        center: {lat: 51.3057676, lng: -0.5494706},
+        zoom: 9,
         disableDefaultUI: true
     });
 }
 
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD284odf2blHXmEQ64JoprTYFjGsp4s4hk&callback=initMap"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD284odf2blHXmEQ64JoprTYFjGsp4s4hk&callback=initMap"></script>
 <!-- build:js scripts/nav.js -->
 <script src="scripts/nav.js"></script>
 <!-- endbuild -->

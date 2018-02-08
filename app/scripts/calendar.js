@@ -74,19 +74,19 @@ function setupCalendarDiv(calendar) {
             for(k = 0; k < calData.calendar[j].journeys.length; k++){
                 output += '<div class=\'mat-cal-foot-day-journey-element bg-' + calData.calendar[j].journeys[k].event + '\'><div class=\'title\'>';
                 output += calData.calendar[j].journeys[k].name;
-                output += '</div><div class=\'location\'><i class=\'fa fa-map-marker\'></i> ' ;
+                output += '</div><div class=\'location\'><i class=\'fas fa-map-marker-alt\'></i> ' ;
                 output += calData.calendar[j].journeys[k].postcode;
-                output += '</div><div class=\'time\'><i class=\'fa fa-clock-o\'></i> ';
+                output += '</div><div class=\'time\'><i class=\'fas fa-clock\'></i> ';
                 output += calData.calendar[j].journeys[k].time;
                 var icon;
                 if(calData.calendar[j].journeys[k].event == 'danger'){
                     icon = 'fa-minus-circle';
                 } else if(calData.calendar[j].journeys[k].event == 'evening'){
-                    icon = 'fa-moon-o';
+                    icon = 'fa-moon';
                 } else {
-                    icon = 'fa-sun-o';
+                    icon = 'fa-sun';
                 }
-                output += '</div><div class=\'icon\'><i class=\'fa ' + icon + '\'></i></div></div>';
+                output += '</div><div class=\'icon\'><i class=\'fas ' + icon + '\'></i></div></div>';
             }
                 output += '</div></div></div></div>';
         }
