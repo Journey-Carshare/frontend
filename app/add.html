@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Journeys.io | Calendar</title>
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!-- <link rel="stylesheet" href="styles/font-awesome.min.css"> -->
+</head>
+<body>
+    <nav class="mat-nav" id="nav">
+        <div class="top-bar">
+            <a href="#" id="peek-show"><i class="fa fa-bars"></i></a>
+            <div class="title">Add Journey</div>
+            <div class="button"></div>
+        </div>
+        <div class="mat-menu" id="peek">
+            <div class="mat-left">
+                <div class="mat-left-user">
+                    <img src="../images/profile_user.jpg" alt="cloud">
+                    <div class="name">Edward Wright</div>
+                    <div class="position">Software Engineer</div>
+                </div>
+                <div class="mat-left-items">
+                    <a href="./calendar.html"><i class="fas fa-calendar-alt"></i> Home</a>
+                    <a href="./map.html"><i class="fas fa-car"></i> Journeys</a>
+                    <a href="./profile.html"><i class="fas fa-user"></i> Profile</a>
+                    <a href="./settings.html"><i class="fas fa-cog"></i> Settings</a>
+                    <a href="./logout.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+            <a href="#" id="peek-hide" class="mat-right"></a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+
+    <form id="addForm" method="post" action="add.html">
+        <div class="form-padding"></div>
+        <div class="form-row">
+            <div class="col">
+                        <div class="alert alert-danger" id="alert"></div>
+                    </div>
+                </div>
+        <div class="form-row">
+            <div class="col toggle">
+                <div class="text">Single</div>
+                <label class="switch">
+                    <input type="checkbox" name="is_recurring">
+                    <span class="slider round"></span>
+                </label>
+                <div class="text">Recurring</div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col toggle">
+                <div class="text">One Way</div>
+                <label class="switch">
+                    <input type="checkbox" name="is_return">
+                    <span class="slider round"></span>
+                </label>
+                <div class="text">Return</div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <div class="week_select">
+                    <label class="switch">
+                        <input type="checkbox" name="sel_0">
+                        <span class="slider">Mon</span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" name="sel_1">
+                        <span class="slider">Tue</span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" name="sel_2">
+                        <span class="slider">Wed</span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" name="sel_3">
+                        <span class="slider">Thu</span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" name="sel_4">
+                        <span class="slider">Fri</span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" name="sel_5">
+                        <span class="slider">Sat</span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" name="sel_6">
+                        <span class="slider">Sun</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="journey_name" class="col-form-label">Journey Name*</label>
+                </div>
+            <div class="col-7">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputPassword" class="col-form-label">Start Date*</label>
+            </div>
+            <div class="col-7">
+                <input type="date" class="form-control" name="journey_start_date" value="1970-01-01" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputPassword" class="col-form-label">End Date</label>
+            </div>
+            <div class="col-7">
+                <input type="date" class="form-control" name="journey_end_date">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+            <label class="col-form-label"><h5>Origin</h5></label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputPassword" class="col-form-label">Name*</label>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" placeholder="Name" name="journey_origin_name" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputPassword" class="col-form-label">Postcode*</label>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" name="journey_origin_postcode" placeholder="Postcode" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputPassword" class="col-form-label">Time*</label>
+            </div>
+            <div class="col-7">
+                <input type="time" class="form-control" name="journey_origin_time" required>
+            </div>
+        </div>
+        <div id="destination-elements">
+        <div class="form-row">
+            <div class="col">
+            <label class="col-form-label"><h5>Destination</h5></label>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputPassword" class="col-form-label">Name*</label>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" placeholder="Name" name="journey_return_name">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputPassword" class="col-form-label">Postcode*</label>
+            </div>
+            <div class="col-7">
+                <input type="text" class="form-control" placeholder="Postcode" name="journey_return_postcode">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="inputPassword" class="col-form-label">Time*</label>
+            </div>
+            <div class="col-7">
+                <input type="time" class="form-control" name="journey_return_time">
+            </div>
+        </div>
+    </div>
+        <div class="form-row">
+            <div class="col">
+                <button type="submit" class="btn btn-success btn-block btn-space">Save</button>
+            </div>
+            <div class="col">
+                <a href="calendar.html" class="btn btn-secondary btn-block btn-space">Cancel</a>
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-111700310-1');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+        <!-- build:js scripts/nav.js -->
+        <script src="scripts/nav.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/add.js -->
+        <script src="scripts/add.js"></script>
+        <!-- endbuild -->
+    </body>
+    </html>

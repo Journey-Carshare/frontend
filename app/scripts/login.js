@@ -1,6 +1,6 @@
-if(getCookie("Cookie") !== ""){
-    console.log(getCookie("Cookie"));
-    window.location.replace("/calendar.html");
+if(getCookie('Cookie') !== ''){
+    console.log(getCookie('Cookie'));
+    window.location.replace('/calendar.html');
 }
 
 function elementHide() {
@@ -73,47 +73,47 @@ document.getElementById('exampleInputPassword1').addEventListener('focusout', el
     // var CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;
     //var CognitoUserPool = AmazonCognitoIdentity.CognitoUserPool;
 function postArray(){
-    console.log("test");
+    console.log('test');
     var data
 
 };
 
-$("#loginForm").submit(function(e) {
+$('#loginForm').submit(function(e) {
     e.preventDefault(); // avoid to execute the actual submit of the form.
     // var url = "https://api.journeys.io/user/login"; // the script where you handle the form input.
-    var url = "https://p6flgqzkv2.execute-api.eu-west-1.amazonaws.com/stage1/user/login";
-    var data = $("#loginForm").serializeArray();
+    var url = 'https://p6flgqzkv2.execute-api.eu-west-1.amazonaws.com/stage1/user/login';
+    var data = $('#loginForm').serializeArray();
     var email, password;
     for(var i = 0; i < data.length; i++){
-        if(data[i].name === "password"){
+        if(data[i].name === 'password'){
             password = data[i].value;
-        } else if (data[i].name === "email") {
+        } else if (data[i].name === 'email') {
             email = data[i].value;
         }
     }
     var output = {
-        "email": email,
-        "password": password
+        'email': email,
+        'password': password
     }
     console.log(output);
 
     $.ajax({
-           type: "POST",
+           type: 'POST',
            url: url,
            data: JSON.stringify(output), // serializes the form's elements.
            success: function(data)
            {
                console.log(data);
                if(data.errorMessage){
-                   console.log("uh oh");
+                   console.log('uh oh');
                } else if(data.id){
                    var date = new Date();
                    date.setTime(+ date + (1 * 86400000));
                    //document.cookie = "Cookie=" + data.id + "; expires="+ date.toGMTString() + " domain='api.journeys.io' path=/";
-                   document.cookie = "Cookie=" + data.id + "; expires="+ date.toGMTString() + " path=/";
-                   window.location.replace("/calendar.html");
+                   document.cookie = 'Cookie=' + data.id + '; expires='+ date.toGMTString() + ' path=/';
+                   window.location.replace('/calendar.html');
                } else {
-                   console.log("fail");
+                   console.log('fail');
                }
            },
            error: function(data){
@@ -125,7 +125,7 @@ $("#loginForm").submit(function(e) {
 });
 
 function getCookie(cname) {
-    var name = cname + "=";
+    var name = cname + '=';
     var decodedCookie = decodeURIComponent(document.cookie);
     var ca = decodedCookie.split(';');
     for(var i = 0; i <ca.length; i++) {
@@ -137,5 +137,5 @@ function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return "";
+    return '';
 }
