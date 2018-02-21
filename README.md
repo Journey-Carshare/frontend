@@ -23,35 +23,20 @@ YYY-MM-DDTHH:MM:SSZ
 ```
 
 ### Client Errors
-#### 1. Sending Invalid JSON
-```
-HTTP/1.1 400 Bad Request
-Content-Length: 35
-   
-{"message":"Problems parsing JSON"}
-```  
-#### 2. Sending Wrong Type of JSON
-```  
-HTTP/1.1 400 Bad Request  
-Content-Length: 40  
-  
-{"message":"Body should be a JSON object"}  
-```  
-#### 3. Sending Invalid Fields
-```
-HTTP/1.1 422 Unprocessable Entity
-Content-Length: 149
 
-{
-  "message": "Validation Failed",
-  "errors": [
-    {
-      "resource": "Issue",
-      "field": "title",
-      "code": "missing_field"
-    }
-  ]
-```
+| Supported Errors | Type |
+|------------------|------|
+| 400 | Bad Request |
+| 401 | Unauthorized |
+| 403 | Access Denied |
+| 404 | Resource Not Found |
+| 413 | Request Too Large |
+| 415 | Unsupported Media |
+| 429 | Quota Exceeded |
+| 500 | API Config Error |
+| 504 | Integration Error |
+
+
 
 | Error Name       |	Description |
 |------------------|--------------|
